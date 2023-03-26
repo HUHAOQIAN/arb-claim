@@ -70,4 +70,3 @@ export async function batchTransferArb(
 }
 
 batchTransferArb(pksAddrsMe, ADDR_CB2C, ARB_RPC_URL!);
-// getGasLimit("0xE811c96701bae6Cb56250704F0236e6fF18cB13D", "0x");
