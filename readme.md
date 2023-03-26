@@ -16,4 +16,4 @@
 
 [监控地址内 arb，并通过合约批量转出](src/transferARB-with-contract.ts)
 
-![示例图片](https://raw.githubusercontent.com/HUHAOQIAN/arb-claim/blob/master/images/arb.png)
+![示例图片](https://github.com/HUHAOQIAN/arb-claim/blob/master/images/arb.png)
