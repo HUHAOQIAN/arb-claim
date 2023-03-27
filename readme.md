@@ -16,6 +16,8 @@
 
 4.[监控地址内 arb，并通过合约批量转出](src/transferARB-with-contract.ts)
 
-5.[批量转账合约](contracts/transfer-arb.sol)
+5.[监控地址内的 GAS，并且转出](src/transfer-gas.ts)
+
+[批量转账合约](contracts/transfer-arb.sol)
 
 ![示例图片](https://github.com/HUHAOQIAN/arb-claim/blob/master/images/arb.png)
