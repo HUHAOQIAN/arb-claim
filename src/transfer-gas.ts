@@ -48,7 +48,7 @@ export async function transferGas(
   }
 }
 
-export async function batchTransferArb(
+export async function batchTransferGas(
   pksAddrsMe: Array<ArbAccounts>,
   OkexMeArb: string,
   ARB_RPC_URL: string
@@ -69,4 +69,4 @@ export async function batchTransferArb(
   }
 }
 
-batchTransferArb(pksAddrsMe, ADDR_CB2C, ARB_RPC_URL!);
+batchTransferGas(pksAddrsMe, ADDR_CB2C, ARB_RPC_URL!);

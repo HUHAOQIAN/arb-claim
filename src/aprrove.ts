@@ -13,8 +13,7 @@ import {
   ADDR_CB2C,
   USDC_TOKEN_ADDR,
 } from "../utils/helpers";
-import { transferGas } from "./transfer-gas";
-const pk = process.env.PRIVATE_KEY_BB1A!;
+import { pksAddrsMe } from "../utils/pks";
 async function approveArb(
   addr: string,
   pk: string,
@@ -56,7 +55,7 @@ async function approveArb(
   }
 }
 
-export async function batchTransferArb(
+export async function batchApproveArb(
   pksAddrsMe: Array<ArbAccounts>,
   ARB_RPC_URL: string,
   spenser: string
@@ -79,15 +78,4 @@ export async function batchTransferArb(
     }
   }
 }
-import { pksAddrsMe } from "../utils/pks";
-
-async function main() {
-  const i = 6;
-  const addr = pksAddrsMe[i]["addr"];
-  const pk = pksAddrsMe[i]["pk"];
-
-  await transferGas(addr, pk, ADDR_CB2C, ARB_RPC_URL!);
-}
-main().catch((e) => {
-  console.log(e);
-});
+batchApproveArb(pksAddrsMe, ARB_RPC_URL!, CONTRACT_TRANSFER_ARB);
