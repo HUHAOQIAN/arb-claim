@@ -8,12 +8,14 @@
 
 ## 5 个脚本
 
-[监控区块，到达制定区块批量 claim](src/claim.ts)
+1.[监控区块，到达制定区块批量 claim](src/claim.ts)
 
-[提前批量授权给 自己部署的批量转出合约](src/aprrove.ts)
+2.[提前批量授权给 自己部署的批量转出合约](src/aprrove.ts)
 
-[批量监控地址内 arb，并且转出](src/transfer-arb.ts)
+3.[批量监控地址内 arb，并且转出](src/transfer-arb.ts)
 
-[监控地址内 arb，并通过合约批量转出](src/transferARB-with-contract.ts)
+4.[监控地址内 arb，并通过合约批量转出](src/transferARB-with-contract.ts)
+
+5.[批量转账合约](contracts/transfer-arb.sol)
 
 ![示例图片](https://github.com/HUHAOQIAN/arb-claim/blob/master/images/arb.png)
