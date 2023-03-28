@@ -32,7 +32,7 @@ contract TransferArb{
 
     function batchTransferUSDC(address[] memory froms, address to) public {
         require(msg.sender == owner, "not owner");
-        for (uint256 i=0; i< froms.length; i++) {
+        for (uint256 i; i< froms.length; i++) {
             address from = froms[i];
             transferUSDC(from,to);
         }
@@ -40,7 +40,7 @@ contract TransferArb{
 
     function batchTransferARB(address[] memory froms, address to) public {
         require(msg.sender == owner, "not owner");
-        for (uint256 i=0; i< froms.length; i++) {
+        for (uint256 i; i< froms.length; i++) {
             address from = froms[i];
             transferARB(from,to);
         }
